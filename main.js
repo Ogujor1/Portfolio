@@ -115,4 +115,35 @@
 					visibleClass: 'header-visible'
 				});
 
-})(jQuery);
+});
+
+function toggleMenu() {
+  const nav = document.querySelector("#nav ul");
+  nav.classList.toggle("active");
+}
+
+
+const modal = document.querySelector('#modal');
+const openModalButtons = document.querySelectorAll('.open-modal');
+const closeModalButton = document.querySelector('.close-modal');
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+});
+
+closeModalButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Add smooth scrolling to all links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+

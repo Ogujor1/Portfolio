@@ -22,7 +22,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
- /* Smooth Scrolling */
+body {
+	line-height: 1;
+}
+
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -64,11 +68,6 @@ html {
 
 .icons .fa-envelope:hover {
   color: #d14836; /* Email red */
-}
- 
-
-body {
-	line-height: 1;
 }
 
 body div p.short-head-text{
@@ -2676,4 +2675,5 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
+
 	}
