@@ -122,7 +122,10 @@ input, select, textarea {
 	html {
 		box-sizing: border-box;
 	}
-
+section header h2.sectop{
+	font-size:80px;
+	font-weight: 900;
+}
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
